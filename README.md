@@ -15,7 +15,8 @@
 4. Dequeue 4: Cetak 4. Cek tetangga 4 (0, 2, 3). Semuanya sudah dikunjungi. **Antrean: [2, 3]**
 5. Dequeue 2: Cetak 2. Cek tetangga 2 (1, 3, 4). Semuanya sudah dikunjungi. **Antrean: [3]**
 6. Dequeue 3: Cetak 3. Cek tetangga 3. Semua sudah dikunjungi. **Antrean: Kosong.**
-7. Selesai.
+7. Hasil Penelusuran BFS: 0 -> 1 -> 4 -> 2 -> 3 -> NULL
+8. Selesai.
 
 **Algoritma DFS:**
 1. Membuat daftar dan tumpukan / stack untuk mencatat node yang dikunjungi.
@@ -35,4 +36,5 @@
 4. Pop 2: Cetak 2. Cek tetangga 2 (1, 3, 4). Semuanya sudah dikunjungi. **Stack: [4, 3].**
 5. Pop 3: Cetak 3. Cek tetangga 3 (1, 2, 4). Semuanya sudah dikunjungi. **Stack: [4].**
 6. Pop 4: Cetak 4.
-7. Selesai.
+7. Hasil Penelusuran DFS: 0 -> 1 -> 2 -> 3 -> 4 -> NULL
+8. Selesai.
