@@ -1,12 +1,13 @@
 **Algoritma BFS:**
-1. Membuat daftar dan antrian untuk mencatat node yang dikunjungi
-2. Masukkan simpul awal ke dalam antrian / queue lalu node tersebut akan ditandai "sudah dikunjungi".
-3. Membuat loop: selama antrian ada isinya, ambil node urutan terdepan, cek semua tetangganya.
-4. Jika tetangga belum dikunjungi, tandai sebagai "kunjungi", lalu masukkan ke dalam antrian.
-5. Ulangi proses tersebut untuk node-node lain di dalamnya.
-6. Proses akan berhenti jika antrian sudah kosong.
-7. Program mencetak hasil dari pencarian.
-8. Selesai.
+1. Membuat daftar dan antrian untuk mencatat node yang dikunjungi.
+2. Membuat fungsi antrian yaitu enqueue dan dequeue.
+3. Mulai: Masukkan node awal ke dalam antrian / queue lalu node tersebut akan ditandai "sudah dikunjungi".
+4. Membuat loop: selama antrian ada isinya, ambil node urutan terdepan, cek semua tetangganya.
+5. Jika tetangga belum dikunjungi, tandai sebagai "kunjungi", lalu masukkan ke dalam antrian.
+6. Ulangi proses tersebut untuk node-node lain di dalamnya.
+7. Proses akan berhenti jika antrian sudah kosong.
+8. Program mencetak hasil dari pencarian.
+9. Selesai.
 
 ->Kalau mengikuti graph pada kode tersebut maka akan jadi seperti ini:
 1. Mulai dari 0: Antrean: [0], Visited: {0}
@@ -20,14 +21,15 @@
 
 **Algoritma DFS:**
 1. Membuat daftar dan tumpukan / stack untuk mencatat node yang dikunjungi.
-2. Masukkan node awal ke dalam stack.
-3. Membuat loop: selama stack ada isinya, ambil/pop node paling atas dari stack
-4. Jika node belum dikunjungi, ambil semua tetangga, lalu masukkan ke dalam stack.
-5. Ulangi proses tersebut untuk node-node lain di dalamnya.
-6. Jika node sudah tidak memiliki tetangga, maka algoritma akan mundur dan mengambil node yang menunggu di stack.
-7. Proses akan berhenti jika stack sudah kosong.
-8. Program mencetak hasil dari pencarian.
-9. Selesai
+2. Membuat fungsi stack yaitu pop dan push.
+3. Mulai: Masukkan node awal ke dalam stack.
+4. Membuat loop: selama stack ada isinya, ambil/pop node paling atas dari stack
+5. Jika node belum dikunjungi, ambil semua tetangga, lalu masukkan ke dalam stack.
+6. Ulangi proses tersebut untuk node-node lain di dalamnya.
+7. Jika node sudah tidak memiliki tetangga, maka algoritma akan mundur dan mengambil node yang menunggu di stack.
+8. Proses akan berhenti jika stack sudah kosong.
+9. Program mencetak hasil dari pencarian.
+10. Selesai
 
 ->Kalau mengikuti graph pada kode tersebut maka akan jadi seperti ini:
 1. Mulai dari 0: **Stack: [0], Visited: {0}.**
