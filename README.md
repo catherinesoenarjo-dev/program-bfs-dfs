@@ -1,7 +1,6 @@
 **Algoritma BFS:**
-1. Membuat daftar dan antrian kosong untuk mencatat node yang dikunjungi.
-2. Membuat fungsi antrian yaitu enqueue dan dequeue.
-3. Siapkan array visited berukuran n (jumlah node) dan isi semua elemennya dengan nilai false
+1. Membuat daftar untuk mencatat node yang dikunjungi.
+2. Membuat antrian kosong.
 4. Tentukan titik awal penelusuran (startNode)
 5. Mulai: Masukkan node awal (startNode) ke dalam antrian / queue lalu node tersebut akan ditandai "sudah dikunjungi" (visited[startNode] = true).
 6. Membuat loop: selama antrian ada isinya, ambil node urutan terdepan dan disimpan dalam curr, curr dicetak, lalu cek semua tetangganya (graph[curr][i] == 1).
