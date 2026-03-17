@@ -1,14 +1,14 @@
 **Algoritma BFS:**
 1. Membuat daftar untuk mencatat node yang dikunjungi.
 2. Membuat antrian kosong.
-4. Tentukan titik awal penelusuran (startNode)
-5. Mulai: Masukkan node awal (startNode) ke dalam antrian / queue lalu node tersebut akan ditandai "sudah dikunjungi" (visited[startNode] = true).
-6. Membuat loop: selama antrian ada isinya, ambil node urutan terdepan dan disimpan dalam curr, curr dicetak, lalu cek semua tetangganya (graph[curr][i] == 1).
-7. Jika tetangga belum dikunjungi (visited[i] == false), tandai sebagai "kunjungi" (visited[i] = true), lalu masukkan ke dalam antrian.
-8. Ulangi proses tersebut untuk node-node lain di dalamnya.
-9. Proses akan berhenti jika antrian sudah kosong.
-10. Program mencetak hasil dari pencarian.
-11. Selesai.
+3. Tentukan titik awal penelusuran (startNode)
+4. Mulai: Masukkan node awal (startNode) ke dalam antrian / queue lalu node tersebut akan ditandai "sudah dikunjungi" (visited[startNode] = true).
+5. Membuat loop: selama antrian ada isinya, ambil node urutan terdepan dan disimpan dalam curr, curr dicetak, lalu cek semua tetangganya (graph[curr][i] == 1) dari i = 0 sampai n-1.
+6. Jika tetangga belum dikunjungi (visited[i] == false), tandai sebagai "kunjungi" (visited[i] = true), lalu masukkan ke dalam antrian.
+7. Ulangi proses tersebut untuk node-node lain di dalamnya.
+8. Proses akan berhenti jika antrian sudah kosong.
+9. Program mencetak hasil dari pencarian.
+10. Selesai.
 
 ->Kalau mengikuti graph pada kode tersebut maka akan jadi seperti ini:
 1. Mulai dari 0: Antrean: [0], Visited: {0}
@@ -21,16 +21,17 @@
 8. Selesai.
 
 **Algoritma DFS:**
-1. Membuat daftar dan tumpukan / stack untuk mencatat node yang dikunjungi.
-2. Membuat fungsi stack yaitu pop dan push.
-3. Mulai: Masukkan node awal ke dalam stack.
-4. Membuat loop: selama stack ada isinya, ambil/pop node paling atas dari stack
-5. Jika node belum dikunjungi, ambil semua tetangga, lalu masukkan ke dalam stack.
-6. Ulangi proses tersebut untuk node-node lain di dalamnya.
-7. Jika node sudah tidak memiliki tetangga, maka algoritma akan mundur dan mengambil node yang menunggu di stack.
-8. Proses akan berhenti jika stack sudah kosong.
-9. Program mencetak hasil dari pencarian.
-10. Selesai
+1. Membuat daftar untuk mencatat node yang dikunjungi.
+2. Membuat stack kosong.
+3. Tentukan titik awal penelusuran (startNode)
+4. Mulai: Masukkan node awal (startNode) ke dalam stack. 
+5. Membuat loop: selama stack ada isinya, ambil/pop node paling atas dari stack yang akan disimpan curr, curr dicetak, lalu cek tetangganya dari indeks i = n-1 sampai 0. 
+6. Jika node belum dikunjungi (visited[i] == false), ambil semua tetangga, lalu masukkan ke dalam stack dan tandai "sudah dikunjungi" (visited[startNode] = true).
+7. Ulangi proses tersebut untuk node-node lain di dalamnya.
+8. Jika node sudah tidak memiliki tetangga, maka algoritma akan mundur dan mengambil node yang menunggu di stack.
+9. Proses akan berhenti jika stack sudah kosong.
+10. Program mencetak hasil dari pencarian.
+11. Selesai
 
 ->Kalau mengikuti graph pada kode tersebut maka akan jadi seperti ini:
 1. Mulai dari 0: **Stack: [0], Visited: {0}.**
